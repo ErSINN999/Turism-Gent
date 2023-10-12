@@ -1,18 +1,26 @@
 *
 {
     box-sizing: border-box;
+    font-family: cursive;
 }
 
 
 /*-------------------Gemeenschappelijke code-----------------------------*/
 nav
 {
+    float: right;
+}
+
+nav ul 
+{
     display: flex;
+    
 }
 
 nav ul li 
 {
     list-style-type: none;
+    padding: 50px;
     
 }
 
