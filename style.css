@@ -2,6 +2,7 @@
 {
     box-sizing: border-box;
     font-family: cursive;
+    margin: 0;
 }
 
 
@@ -12,12 +13,12 @@ div#container-nav
 }
 div#header-nav
 {
-    width: 30%;
+   
 }
 
 div#nav
 {
-    width: 70%;
+padding-left: 18cm;
 }
 nav
 {
@@ -38,7 +39,23 @@ nav ul li
     
 }
 
+#foto1-home
+{
+    height: 800px;
+    position: relative;
+    position: fixed;
+}
 
+div#grote-tex-mid
+{
+   
+    position: absolute;
+   top: 0;
+   left: 0;
+
+
+    
+}
 
 
 
