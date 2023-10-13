@@ -5,14 +5,18 @@
     margin: 0;
 }
 
-
-/*-------------------Gemeenschappelijke code-----------------------------*/
+body
+{
+    height: 20cm;
+}
+/*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
 div#container-nav
 {
     display: flex;
 }
 div#header-nav
 {
+   width: 30%;
    
 }
 
@@ -42,18 +46,35 @@ nav ul li
 #foto1-home
 {
     height: 800px;
-    position: relative;
-    position: fixed;
+    z-index: 1;
+    
 }
 
-div#grote-tex-mid
+div#grote-text-mid
 {
-   
+    background-color: rgba(0, 0, 0, 0.315);
+    color: white;
+    top: 400px;
+    z-index: 2;
     position: absolute;
-   top: 0;
-   left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+    margin-top: ;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.651);
+}
 
+#titel-foto:hover
+{
+    transform: scale(1.2);
+    transition-duration: 0.5s;
+}
 
+img#logo
+{
+    width: 200px; 
     
 }
 
