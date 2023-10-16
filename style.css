@@ -8,6 +8,8 @@
 body
 {
     height: 20cm;
+    background-color: red;
+    padding: 0;
 }
 /*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
 div#container-nav
@@ -22,7 +24,9 @@ div#header-nav
 
 div#nav
 {
-padding-left: 18cm;
+    text-align: right;
+    position: absolute;
+    right: 0;
 }
 nav
 {
@@ -33,6 +37,7 @@ nav ul
 {
     display: flex;
     padding-right: 20px;
+    padding-top: 20px;
 }
 
 nav ul li 
@@ -41,18 +46,20 @@ nav ul li
     padding: 20px;
     border-radius: 20px;
     
+    
 }
 
 #foto1-home
 {
-    height: 800px;
+    height: 750px;
     z-index: 1;
+    width: 100%;
     
 }
 
 div#grote-text-mid
 {
-    background-color: rgba(0, 0, 0, 0.315);
+   
     color: white;
     top: 400px;
     z-index: 2;
@@ -60,21 +67,20 @@ div#grote-text-mid
     width: 100%;
     text-align: center;
     font-size: 100px;
-    padding-top: 100px;
-    padding-bottom: 400px;
-    margin-top: ;
     text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.651);
 }
 
 #titel-foto:hover
 {
-    transform: scale(1.2);
+    transform: scale(1.1);
     transition-duration: 0.5s;
 }
 
 img#logo
 {
-    width: 200px; 
+    width: 100px;
+    margin-left: 100px;
+
     
 }
 
@@ -82,6 +88,32 @@ img#logo
 
 
 /*-------------------Home (Ersin)-----------------------------*/
+div#container-home
+{
+    display: flex;
+    padding-top: 50px;
+
+}
+div#foto-column1, div#foto-column2, div#foto-column3
+{
+    width: 35%;
+    
+}
+img#activiteit-foto
+{
+    width: 550px;
+}
+
+img#Bezienswaardigheden-foto
+{
+    width: 550px;
+}
+
+img#eten-foto
+{
+    width: 550px;
+}
+
 
 
 
