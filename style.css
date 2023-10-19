@@ -8,7 +8,7 @@
 body
 {
     height: 20cm;
-    background-color: red;
+    
     padding: 0;
 }
 /*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
@@ -99,22 +99,46 @@ div#foto-column1, div#foto-column2, div#foto-column3
     width: 35%;
     
 }
-img#activiteit-foto
+img#activiteit-foto, img#Bezienswaardigheden-foto, img#eten-foto
 {
     width: 550px;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 1;
+    
 }
 
-img#Bezienswaardigheden-foto
+img#activiteit-foto:hover, img#Bezienswaardigheden-foto:hover, img#eten-foto:hover
 {
-    width: 550px;
+    background-color: rgba(0, 0, 0, 0.377);
+    transition-duration: 2s;
+    transition-delay: inherit;
+    transform: scale(0.5s);
 }
 
-img#eten-foto
+p#text1-foto, p#text2-foto, p#text3-foto
 {
-    width: 550px;
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    padding-top: 150px;
 }
 
+p#text1-foto
+{
+    padding-left: 140px;
+    padding-top: 150px;
+}
 
+p#text2-foto
+{
+    padding-left: 30px;
+    
+}
+p#text3-foto
+{
+    padding-left: 180px;
+    
+}
 
 
 
