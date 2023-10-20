@@ -52,7 +52,7 @@ nav ul li
 
 #foto1-home
 {
-    height: 700px;
+    height: auto;
     z-index: 1;
     width: 100%;
     
@@ -97,7 +97,7 @@ div#container-home
 }
 #container-home > div
 {
-    width: 100%;
+    flex: 1;
 
 }
 div#foto-column1, div#foto-column2, div#foto-column3
