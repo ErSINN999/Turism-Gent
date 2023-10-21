@@ -9,8 +9,8 @@
 body
 {
     height: 5cm;
-    
     padding: 0;
+    
 }
 /*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
 div#container-nav
@@ -32,6 +32,7 @@ div#nav
 nav
 {
     background-color: white;
+    
 }
 
 nav ul 
@@ -80,11 +81,20 @@ div#grote-text-mid
 img#logo
 {
     width: 100px;
-    margin-left: 100px;
+    margin-left: 100px;   
+}
 
+#titel
+{
+    font-size: 35px;
     
 }
 
+p#text-ondertitel
+{
+    font-size: 20px;
+    padding-top: 30px;
+}
 
 
 
@@ -169,11 +179,55 @@ p#text3-foto
 
 
 /*-------------------Eten  (Ersin)-----------------------------*/
+div#header
+{
+   
+}
+img#foto-eten
+{
+    width: 100%;
+    height: 820px;
+    
+}
 
+div#container-eten
+{
+    margin-left: 12cm;
+    margin-right: 12cm;
+    height: 60cm;
+    margin-top: 2cm;
+}
 
+img#eten3
+{
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
+#text-eten
+{
+    padding-top: 20px;
+}
 
-
+#card
+{
+   
+    border-radius: 10px;
+    
+    margin: 20px;
+    height: 2cm;
+    max-width: 340px;
+    margin: auto;
+    border-style: solid ;
+    
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+  
+  transition: 0.3s;
+ 
+  
+}
 /*-------------------Bereikbaarheid (CAN)-----------------------------*/
 
 
