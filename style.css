@@ -228,9 +228,142 @@ img#eten3
  
   
 }
+
+/*Eten2*/
+div#rij1, #rij2, #rij3
+{
+    height: 15.43cm;
+}
+#rij1, #rij2, #rij3, #rij4
+{
+    text-align: center;
+    
+}
+
+
+div#column1
+{
+    width: 50%; 
+    float: left;
+    background-color: pink; 
+    
+}
+
+div#column-foto
+{
+    width: 50%;
+    float: left;
+    
+}
+
+h1#h1-rij1
+{
+    padding-top: 120px;
+}
+
+h1#h1-rij2
+{
+    padding-top: 90px;
+}
+
+h1#h1-rij3
+{
+    padding-top: 100px;
+}
+
+p#text
+{
+    padding-top: 30px;
+    line-height: 35px;
+    padding-left: 100px;
+    padding-right: 100px;
+   animation-name: inherit;
+   animation-duration: 0.5s;
+}
+
+button
+{
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: white;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    
+}
+
+button:hover
+{
+    background-color: black ;
+    color: pink;
+    transition-duration: 0.5s;
+    width: 170px;
+}
+button:hover::after
+{
+    transition-duration: 0.5s;
+}
+
+img#foto1, img#foto2
+{
+    width: 50%;
+    max-width: 500px;
+    object-fit: cover;
+    height: auto;
+    float: left;  
+}
+
+
+img#instagram, img#locatie
+{
+    width: 100%;
+    max-width: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
+
 /*-------------------Bereikbaarheid (CAN)-----------------------------*/
 
 
 
 
 /*-------------------Contact  (CAN)-----------------------------*/
+
+@media  only screen and (max-width:1220px)
+{
+   
+    #column-foto
+    {
+        width: 100%;
+    }
+ 
+    #column1
+    {
+        width: 50%;
+    }
+}
+@media  only screen and (max-width:900px) and (min-width:600px)
+{
+    #column-foto
+    {
+        width: 30%;
+    }
+    #column1
+    {
+        width: 70%;
+    }
+   
+}
+@media  only screen and (max-width:600px)
+{
+    div#column1, div#column2-foto
+    {
+        width: 100%;
+    }
+
+   
+}
