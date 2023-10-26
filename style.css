@@ -17,6 +17,8 @@ div#container-nav
 {
     display: flex;
 }
+
+
 div#header-nav
 {
    width: 30%;
@@ -102,35 +104,31 @@ p#text-ondertitel
 div#container-home
 {
     display: flex;
-    padding-top: -20px;
-    width: 35%;
+  
 }
-#container-home > div
+div#container-home > div.hover-box
 {
     flex: 1;
+    margin: 1%;
+}
 
-}
-div#foto-column1, div#foto-column2, div#foto-column3
-{
-    
-}
+
 
 .hover-box
 {
-    transition: transform 0.3s ease;
-    width: 550px;
+    
    justify-content: space-between ;
 }
 
 .hover-box:hover
 {
     transform: translateY(-120px);
+    transition: transform 0.3s ease;
 }
 
 img#activiteit-foto, img#Bezienswaardigheden-foto, img#eten-foto
 {
-    width: 550px;
-    
+    max-width: 100%;
     background-color: rgba(0, 0, 0, 0.329);
     z-index: 1;
 
@@ -170,7 +168,7 @@ img#foto-activiteit
 {
     height: 100%;
     width: 100%;
-    max-height: 550px;
+    max-height: 100%;
     
 }
 
@@ -180,9 +178,23 @@ img#foto-activiteit
     float: left;
     background-color: rgba(50, 140, 243, 0.685); 
     height: 100%;
+    max-height: 100%;
 }
 
+#h1-rij1-activiteit
+{
+    padding-top: 100px;
+}
+#h1-rij2-activiteit
+{
+    padding-top: 120px;
+}
+#h1-rij3-activiteit
+{
+    padding-top: 120px;
+}
 
+#btn-activiteit
 
 
 /*-------------------Bezienswaardigheden (CAN)-----------------------------*/
@@ -299,6 +311,11 @@ img#instagram, img#locatie
 
 
 /*-------------------Contact  (CAN)-----------------------------*/
+
+
+
+
+/*------------------Responsive Website-------------------------*/
 
 @media  only screen and (max-width:1220px)
 {
