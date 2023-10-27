@@ -8,7 +8,7 @@
 
 body
 {
-    height: 5cm;
+    height: 100%;
     padding: 0;
   
 }
@@ -16,6 +16,7 @@ body
 div#container-nav
 {
     display: flex;
+    
 }
 
 
@@ -100,11 +101,51 @@ p#text-ondertitel
 
 
 
+#container
+{
+    height: 100%; 
+}
+
+.rij
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    background-color: azure;
+    padding: 20px;
+    /* justify-items: center;       */
+}
+
+.rij > div{
+    flex:1;    
+}
+
+.rij > div img#foto-activiteit{
+    height: auto;
+    width: 500px;
+    margin-left: 20px;
+    border:black 5px solid;
+    margin-top:50px;
+}
+
+.rij > div h1{
+    padding-left: 10px;
+    text-align: center;
+   
+}
+
+.rij a{
+    padding-left:10px;
+}
+
+.rij div p#text{
+    text-align: justify;
+}
+
 /*-------------------Home (Ersin)-----------------------------*/
 div#container-home
 {
     display: flex;
-  
 }
 div#container-home > div.hover-box
 {
@@ -169,7 +210,6 @@ img#foto-activiteit
     height: 100%;
     width: 100%;
     max-height: 100%;
-    
 }
 
 #column-activiteit
@@ -194,7 +234,11 @@ img#foto-activiteit
     padding-top: 120px;
 }
 
-#btn-activiteit
+#foto-activiteit
+{
+    width: 90%;
+}
+
 
 
 /*-------------------Bezienswaardigheden (CAN)-----------------------------*/
@@ -205,8 +249,8 @@ img#foto-bezienswaardigheden
     width: 100%;
     max-height: 100%;
     
+    
 }
-
 #column-bezienswaardigheden
 {
     width: 50%; 
@@ -216,39 +260,13 @@ img#foto-bezienswaardigheden
     max-height: 100%;
 }
 
-#h1-rij1-bezienswaardigheden
+#h1-padding
 {
     padding-top: 100px;
 }
-#h1-rij2-bezienswaardigheden
-{
-    padding-top: 120px;
-}
-#h1-rij3-bezienswaardigheden
-{
-    padding-top: 120px;
-}
-
-
-
-
 
 /*-------------------Eten  (Ersin)-----------------------------*/
 
-/*Eten2*/
-div#rij1, #rij2, #rij3
-{
-    height: 15.43cm;
-}
-#rij1, #rij2, #rij3, #rij4
-{
-    text-align: center;   
-}
-
-#rij2
-{
-
-}
 
 div#column1
 {
@@ -263,22 +281,6 @@ div#column-foto
     width: 50%;
     float: left;
 
-    
-}
-
-h1#h1-rij1
-{
-    padding-top: 120px;
-}
-
-h1#h1-rij2
-{
-    padding-top: 90px;
-}
-
-h1#h1-rij3
-{
-    padding-top: 100px;
 }
 
 p#text
@@ -391,17 +393,8 @@ img#instagram, img#locatie
 
 @media  only screen and (max-width:1089px) 
 {
-    h1#h1-rij1
-    {
-        padding-top: 60px;
-    }
-    
-    h1#h1-rij2
-    {
-        padding-top: 50px;
-    }
-    
-    h1#h1-rij3
+
+    h1#h1-padding
     {
         padding-top: 60px;
     }
