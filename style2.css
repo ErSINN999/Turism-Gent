@@ -98,6 +98,71 @@ p#text-ondertitel
     padding-top: 30px;
 }
 
+.rij
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    padding: 20px;
+    /* justify-items: center;       */
+}
+
+.rij > div{
+    flex:1;    
+}
+.kleur1
+{
+    background-color: pink;
+}
+
+.kleur2
+{
+    background-color: aquamarine;
+}
+
+.kleur3
+{
+    background-color: skyblue;
+}
+
+.rij > div img#foto-activiteit{
+    height: auto;
+    width: 500px;
+    margin-left: 20px;
+    border:black 5px solid;
+    margin-top:50px;
+}
+
+.rij > div img#foto-eten
+{
+    height: auto;
+    width: 350px;
+    margin-left: 20px;
+    border:black 5px solid;
+    margin-top:50px;
+}
+
+
+
+
+.rij > div h1{
+    padding-left: 10px;
+    text-align: center;
+   
+}
+
+.icon
+{
+    text-align: center;
+}
+
+.rij a{
+    padding-left:10px;
+}
+
+.rij div p#text{
+    text-align: justify;
+}
 
 
 /*-------------------Home (Ersin)-----------------------------*/
@@ -194,7 +259,6 @@ img#foto-activiteit
     padding-top: 120px;
 }
 
-#btn-activiteit
 
 
 /*-------------------Bezienswaardigheden (CAN)-----------------------------*/
@@ -234,52 +298,6 @@ img#foto-bezienswaardigheden
 
 
 /*-------------------Eten  (Ersin)-----------------------------*/
-
-/*Eten2*/
-div#rij1, #rij2, #rij3
-{
-    height: 15.43cm;
-}
-#rij1, #rij2, #rij3, #rij4
-{
-    text-align: center;   
-}
-
-#rij2
-{
-
-}
-
-div#column1
-{
-    width: 50%; 
-    float: left;
-    background-color: pink; 
-    height: 100%;
-}
-
-div#column-foto
-{
-    width: 50%;
-    float: left;
-
-    
-}
-
-h1#h1-rij1
-{
-    padding-top: 120px;
-}
-
-h1#h1-rij2
-{
-    padding-top: 90px;
-}
-
-h1#h1-rij3
-{
-    padding-top: 100px;
-}
 
 p#text
 {
@@ -334,41 +352,7 @@ img#instagram, img#locatie
 }
 
 
-.rij
-{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: nowrap;
-    background-color: azure;
-    padding: 20px;
-    /* justify-items: center;       */
-}
 
-.rij > div{
-    flex:1;    
-}
-
-.rij > div img#foto-activiteit{
-    height: auto;
-    width: 500px;
-    margin-left: 20px;
-    border:black 5px solid;
-    margin-top:50px;
-}
-
-.rij > div h1{
-    padding-left: 10px;
-    text-align: center;
-   
-}
-
-.rij a{
-    padding-left:10px;
-}
-
-.rij div p#text{
-    text-align: justify;
-}
 
 
 /*-------------------Bereikbaarheid (CAN)-----------------------------*/
