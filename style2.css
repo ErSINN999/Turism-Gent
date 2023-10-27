@@ -1,0 +1,466 @@
+*
+{
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0;
+    
+}
+
+body
+{
+    height: 5cm;
+    padding: 0;
+  
+}
+/*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
+div#container-nav
+{
+    display: flex;
+}
+
+
+div#header-nav
+{
+   width: 30%;
+   
+}
+
+div#nav
+{
+    text-align: right;
+    position: absolute;
+    right: 0;
+}
+nav
+{
+    background-color: white;
+    
+}
+
+nav ul 
+{
+    display: flex;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+nav ul li 
+{
+    list-style-type: none;
+    padding: 20px;
+    border-radius: 20px;
+    
+    
+}
+
+#foto1-home
+{
+    height: auto;
+    z-index: 1;
+    width: 100%;
+    
+}
+
+div#grote-text-mid
+{
+   
+    color: white;
+    top: 400px;
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.651);
+}
+
+#titel-foto:hover
+{
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+img#logo
+{
+    width: 100px;
+    margin-left: 100px;   
+}
+
+#titel
+{
+    font-size: 35px;
+    
+}
+
+p#text-ondertitel
+{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+
+
+/*-------------------Home (Ersin)-----------------------------*/
+div#container-home
+{
+    display: flex;
+  
+}
+div#container-home > div.hover-box
+{
+    flex: 1;
+    margin: 1%;
+}
+
+
+
+.hover-box
+{
+    
+   justify-content: space-between ;
+}
+
+.hover-box:hover
+{
+    transform: translateY(-120px);
+    transition: transform 0.3s ease;
+}
+
+img#activiteit-foto, img#Bezienswaardigheden-foto, img#eten-foto
+{
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    z-index: 1;
+
+    
+}
+
+p#text1-foto, p#text2-foto, p#text3-foto
+{
+    position: absolute;
+    color: white;
+    font-size: 50px;
+    padding-top: 20px;
+    
+}
+
+p#text1-foto
+{
+    padding-left: 140px;
+}
+
+p#text2-foto
+{
+    padding-left: 30px;
+    
+}
+p#text3-foto
+{
+    padding-left: 180px;
+    
+}
+
+
+
+
+/*-------------------Activiteit (Ersin)-----------------------------*/
+img#foto-activiteit
+{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    
+}
+
+#column-activiteit
+{
+    width: 50%; 
+    float: left;
+    background-color: rgba(50, 140, 243, 0.685); 
+    height: 100%;
+    max-height: 100%;
+}
+
+#h1-rij1-activiteit
+{
+    padding-top: 100px;
+}
+#h1-rij2-activiteit
+{
+    padding-top: 120px;
+}
+#h1-rij3-activiteit
+{
+    padding-top: 120px;
+}
+
+#btn-activiteit
+
+
+/*-------------------Bezienswaardigheden (CAN)-----------------------------*/
+
+img#foto-bezienswaardigheden
+{
+    height: 100%;
+    width: 100%;
+    max-height: 100%;
+    
+}
+
+#column-bezienswaardigheden
+{
+    width: 50%; 
+    float: left;
+    background-color: rgba(115, 113, 113, 0.685); 
+    height: 100%;
+    max-height: 100%;
+}
+
+#h1-rij1-bezienswaardigheden
+{
+    padding-top: 100px;
+}
+#h1-rij2-bezienswaardigheden
+{
+    padding-top: 120px;
+}
+#h1-rij3-bezienswaardigheden
+{
+    padding-top: 120px;
+}
+
+
+
+
+
+/*-------------------Eten  (Ersin)-----------------------------*/
+
+/*Eten2*/
+div#rij1, #rij2, #rij3
+{
+    height: 15.43cm;
+}
+#rij1, #rij2, #rij3, #rij4
+{
+    text-align: center;   
+}
+
+#rij2
+{
+
+}
+
+div#column1
+{
+    width: 50%; 
+    float: left;
+    background-color: pink; 
+    height: 100%;
+}
+
+div#column-foto
+{
+    width: 50%;
+    float: left;
+
+    
+}
+
+h1#h1-rij1
+{
+    padding-top: 120px;
+}
+
+h1#h1-rij2
+{
+    padding-top: 90px;
+}
+
+h1#h1-rij3
+{
+    padding-top: 100px;
+}
+
+p#text
+{
+    padding-top: 5%;
+    line-height: 210%;
+    padding-left: 10%;
+    padding-right: 10%;
+   animation-name: inherit;
+   animation-duration: 0.5s;
+}
+
+button
+{
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: white;
+    font-size: 15px;
+    transition-duration: 0.5s;
+    
+}
+
+button:hover
+{
+    background-color: black ;
+    color: pink;
+    transition-duration: 0.5s;
+    width: 170px;
+}
+button:hover::after
+{
+    transition-duration: 0.5s;
+}
+
+img#foto1, img#foto2
+{
+    width: 50%;
+    max-width: 500px;
+    height: auto;
+    float: left;  
+}
+
+
+img#instagram, img#locatie
+{
+    width: 100%;
+    max-width: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+
+.rij
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    background-color: azure;
+    padding: 20px;
+    /* justify-items: center;       */
+}
+
+.rij > div{
+    flex:1;    
+}
+
+.rij > div img#foto-activiteit{
+    height: auto;
+    width: 500px;
+    margin-left: 20px;
+    border:black 5px solid;
+    margin-top:50px;
+}
+
+.rij > div h1{
+    padding-left: 10px;
+    text-align: center;
+   
+}
+
+.rij a{
+    padding-left:10px;
+}
+
+.rij div p#text{
+    text-align: justify;
+}
+
+
+/*-------------------Bereikbaarheid (CAN)-----------------------------*/
+
+
+
+
+/*-------------------Contact  (CAN)-----------------------------
+
+
+
+
+                    UNDER CONSTRUCTION
+ De code staat momenteel in Contact.html we gaan er zo snel mogelijk een oplossing voor vinden*/
+
+
+
+
+
+/*------------------Responsive Website-------------------------*/
+
+@media  only screen and (max-width:1220px)
+{
+   
+    #column-foto, #foto-activiteit
+    {
+        width: 100%;
+    }
+ 
+    #column1, #column-activiteit
+    {
+        width: 100%;
+        
+    }
+}
+@media  only screen and (max-width:900px) and (min-width:600px)
+{
+    #column-foto, #foto-activiteit
+    {
+        width: 100%;
+    }
+    #column1, #column-activiteit
+    {
+        width: 100%;
+    }
+   
+}
+
+@media  only screen and (max-width:1230px) 
+{
+    #rij1, #rij2, #rij3, #rij4
+    {
+        font-size: smaller;
+    }
+   
+}
+
+@media  only screen and (max-width:1089px) 
+{
+    h1#h1-rij1
+    {
+        padding-top: 60px;
+    }
+    
+    h1#h1-rij2
+    {
+        padding-top: 50px;
+    }
+    
+    h1#h1-rij3
+    {
+        padding-top: 60px;
+    }
+
+    button
+    {
+        margin-top: 20px;
+    }
+   
+}
+@media  only screen and (max-width:600px)
+{
+    div#column1, div#column2-foto, #column-activiteit
+    {
+        width: 100%;
+    }
+
+
+    div#column-foto, #foto-activiteit
+    {
+        width: 100%;
+        
+    }
+   
+}
