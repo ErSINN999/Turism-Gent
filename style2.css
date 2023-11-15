@@ -3,7 +3,6 @@
     box-sizing: border-box;
     font-family: cursive;
     margin: 0;
-    
 }
 
 body
@@ -12,7 +11,10 @@ body
     padding: 0;
   
 }
+
 /*-------------------Gemeenschappelijke code -----------------------------*/
+
+/*Navigatie*/
 div#container-nav
 {
     display: flex;
@@ -31,10 +33,10 @@ div#nav
     position: absolute;
     right: 0;
 }
+
 nav
 {
     background-color: white;
-    
 }
 
 nav ul 
@@ -57,12 +59,139 @@ nav ul li a
     color: black;
 }
 
+
+
+/*Instagram + Locatie icon positie*/
+img#logo
+{
+    width: 100px;
+    margin-left: 100px;   
+}
+
+/*Text code*/
+#titel
+{
+    font-size: 35px;
+}
+
+p#text-ondertitel
+{
+    font-size: 20px;
+    padding-top: 30px;
+}
+
+.rij
+{
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: nowrap;
+    /* justify-items: center;       */
+}
+
+.rij > div{
+    flex:1;    
+}
+
+/*Achtergrond kleur paginas*/
+.kleur1
+{
+    background-color: pink;
+}
+
+.kleur2
+{
+    background-color: aquamarine;
+}
+
+.kleur3
+{
+    background-color: skyblue;
+}
+
+h1
+{
+    padding-top: 90px;
+    transform: scale(1);
+    transition-timing-function: ease;
+    transition-duration: 1.2s;
+    transition-delay: 0.24s;
+}
+
+.rij > div h1{
+    padding-left: 10px;
+    text-align: center;
+}
+
+.icon
+{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.rij a{
+    padding-left:10px;
+}
+
+.rij div p#text{
+    text-align: justify;
+}
+
+/*Button code*/
+button
+{
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    background-color: white;
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+
+button:hover
+{
+    background-color: black ;
+    color: white;
+    transition-duration: 0.5s;
+    width: 170px;
+}
+
+button:hover::after
+{
+    transition-duration: 0.5s;
+}
+
+/*Text code p*/
+p#text
+{
+    padding-top: 5%;
+    line-height: 210%;
+    padding-left: 10%;
+    padding-right: 10%; 
+}
+
+/*Logo instagram + locatie*/
+img#instagram, img#locatie
+{
+    width: 100%;
+    max-width: 30px;
+    margin-left: 30px;
+    margin-top: 50px;
+}
+
+/*-------------------Home code (Ersin)-----------------------------*/
+#box
+{
+    height: 20cm;
+}
+
+/*Home pagina code*/
 #foto1-home
 {
-    height: 600px;
+    height: 630px;
     z-index: 1;
     width: 100%;
-    
 }
 
 div#grote-text-mid
@@ -84,157 +213,27 @@ div#grote-text-mid
     transition-duration: 0.5s;
 }
 
-img#logo
-{
-    width: 100px;
-    margin-left: 100px;   
-}
-
-#titel
-{
-    font-size: 35px;
-    
-}
-
-p#text-ondertitel
-{
-    font-size: 20px;
-    padding-top: 30px;
-}
-
-.rij
-{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: nowrap;
-    padding: 20px;
-    /* justify-items: center;       */
-}
-
-.rij > div{
-    flex:1;    
-}
-.kleur1
-{
-    background-color: pink;
-}
-
-.kleur2
-{
-    background-color: aquamarine;
-}
-
-.kleur3
-{
-    background-color: skyblue;
-}
-
-.rij > div img#foto-activiteit{
-    height: auto;
-    width: 500px;
-    margin-left: 20px;
-    border:black 5px solid;
-    margin-top:50px;
-}
-
-.rij > div img#foto-eten
-{
-    height: auto;
-    width: 350px;
-    margin-left: 20px;
-    border:black 5px solid;
-    margin-top:50px;
-}
-
-
-
-
-.rij > div h1{
-    padding-left: 10px;
-    text-align: center;
-   
-}
-
-.icon
-{
-    text-align: center;
-}
-
-.rij a{
-    padding-left:10px;
-}
-
-.rij div p#text{
-    text-align: justify;
-}
-
-button
-{
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
-    border-radius: 30px;
-    font-weight: bold;
-    background-color: white;
-    font-size: 15px;
-    transition-duration: 0.5s;
-    
-}
-
-button:hover
-{
-    background-color: black ;
-    color: white;
-    transition-duration: 0.5s;
-    width: 170px;
-}
-button:hover::after
-{
-    transition-duration: 0.5s;
-}
-
-p#text
-{
-    padding-top: 5%;
-    line-height: 210%;
-    padding-left: 10%;
-    padding-right: 10%;
-    
-}
-
-h1
-{
-    padding-top: 50px
-}
-
-/*-------------------Home (Ersin)-----------------------------*/
-#box
-{
-    height: 5cm;
-}
 div#container-home
 {
     display: flex;
-
-  
 }
+
 div#container-home > div.hover-box
 {
     flex: 1;
-    margin: 1%;
+    margin-left: 0.5%;
 }
-
-
 
 .hover-box
 {
     
    justify-content: space-between ;
+   transition: transform 0.3s ease;
 }
 
 .hover-box:hover
 {
-    transform: translateY(-120px);
+    transform: translateY(-190px);
     transition: transform 0.3s ease;
 }
 
@@ -242,9 +241,7 @@ img#activiteit-foto, img#Bezienswaardigheden-foto, img#eten-foto
 {
     max-width: 100%;
     background-color: rgba(0, 0, 0, 0.329);
-    z-index: 1;
-
-    
+    z-index: 1; 
 }
 
 p#text1-foto, p#text2-foto, p#text3-foto
@@ -253,7 +250,6 @@ p#text1-foto, p#text2-foto, p#text3-foto
     color: white;
     font-size: 50px;
     padding-top: 20px;
-    
 }
 
 p#text1-foto
@@ -272,64 +268,116 @@ p#text3-foto
     
 }
 
-
-
-
 /*-------------------Activiteit (Ersin)-----------------------------*/
-img#foto-activiteit
-{
-    height: 100%;
-    width: 100%;
-    max-height: 100%; 
-    
-
-}
-
-/*-------------------Bezienswaardigheden (CAN)-----------------------------*/
-
-img#foto-bezienswaardigheden
-{
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    
-}
-
-
-/*-------------------Eten  (Ersin)-----------------------------*/
-
-
-img#foto1, img#foto2
-{
-    width: 50%;
-    max-width: 500px;
+.rij > div img#foto-activiteit{
     height: auto;
-    float: left;  
+    width: 100%;
+    max-width: 700px;
+    margin-left: 70px;
+    border:black 5px solid;
+    margin-top:50px;
+    
+   
+}
+/*-------------------Bezienswaardigheden (CAN)-----------------------------*/
+.rij > div img#foto-bezienswaardigheden{
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+    margin-left: 70px;
+    border:black 5px solid;
+    margin-top:50px;
+    
+}
+/*-------------------Eten  (Ersin)-----------------------------*/
+.rij > div img#foto-eten
+{
+    height: auto;
+    width: 100%;
+    max-width: 350px;
+    margin-left: 70px;
+    border:black 5px solid;
+    margin-top:50px;
+    
 }
 
 
-img#instagram, img#locatie
+/*-------------------Contact  (CAN)-----------------------------*/
+
+.footer-basic {
+    
+  padding:40px 0;
+  background-color:#ffffff;
+  color:#4b4c4d;
+}
+
+.footer-basic ul {
+  padding:0;
+  text-align:center;
+  font-size:18px; 
+}
+
+.volg{
+    padding-bottom: 30px;
+    font-size: 20px;
+}
+
+.footer-basic li 
+{
+  padding:0 10px;
+  display:inline-block;
+}
+
+.footer-basic ul a 
+{
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+.footer-basic ul a:hover 
+{
+  opacity:1;
+}
+
+.footer-basic .social 
+{
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a 
+{
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.social-instagram
 {
     width: 100%;
-    max-width: 30px;
-    margin-left: 30px;
-    margin-top: 50px;
+}
+.footer-basic .social > a:hover 
+{
+  opacity:0.9;
 }
 
-
-
-
-
-
-
-/*-------------------Contact  (CAN)-----------------------------
-
-
-
-
-
-
-
+.footer-basic .copyright 
+{
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
 /*------------------Responsive Website-------------------------*/
 
 @media  only screen and (max-width:1220px)

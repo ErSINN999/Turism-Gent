@@ -99,8 +99,6 @@ p#text-ondertitel
     padding-top: 30px;
 }
 
-
-
 #container
 {
     height: 100%; 
@@ -123,7 +121,7 @@ p#text-ondertitel
 .rij > div img#foto-activiteit{
     height: auto;
     width: 500px;
-    margin-left: 20px;
+    margin-left: 10px;
     border:black 5px solid;
     margin-top:50px;
 }
@@ -152,8 +150,6 @@ div#container-home > div.hover-box
     flex: 1;
     margin: 1%;
 }
-
-
 
 .hover-box
 {
@@ -210,36 +206,8 @@ img#foto-activiteit
     height: 100%;
     width: 100%;
     max-height: 100%;
+    max-width: 800px;
 }
-
-#column-activiteit
-{
-    width: 50%; 
-    float: left;
-    background-color: rgba(50, 140, 243, 0.685); 
-    height: 100%;
-    max-height: 100%;
-}
-
-#h1-rij1-activiteit
-{
-    padding-top: 100px;
-}
-#h1-rij2-activiteit
-{
-    padding-top: 120px;
-}
-#h1-rij3-activiteit
-{
-    padding-top: 120px;
-}
-
-#foto-activiteit
-{
-    width: 90%;
-}
-
-
 
 /*-------------------Bezienswaardigheden (CAN)-----------------------------*/
 
@@ -248,8 +216,6 @@ img#foto-bezienswaardigheden
     height: 100%;
     width: 100%;
     max-height: 100%;
-    
-    
 }
 #column-bezienswaardigheden
 {
@@ -258,11 +224,6 @@ img#foto-bezienswaardigheden
     background-color: rgba(115, 113, 113, 0.685); 
     height: 100%;
     max-height: 100%;
-}
-
-#h1-padding
-{
-    padding-top: 100px;
 }
 
 /*-------------------Eten  (Ersin)-----------------------------*/
