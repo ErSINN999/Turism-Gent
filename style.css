@@ -1,17 +1,4 @@
-*
-{
-    box-sizing: border-box;
-    font-family: cursive;
-    margin: 0;
-    
-}
 
-body
-{
-    height: 100%;
-    padding: 0;
-  
-}
 /*-------------------Gemeenschappelijke code (Navigatie)-----------------------------*/
 div#container-nav
 {
@@ -140,181 +127,86 @@ p#text-ondertitel
     text-align: justify;
 }
 
-/*-------------------Home (Ersin)-----------------------------*/
-div#container-home
-{
-    display: flex;
-}
-div#container-home > div.hover-box
-{
-    flex: 1;
-    margin: 1%;
-}
-
-.hover-box
-{
-    
-   justify-content: space-between ;
-}
-
-.hover-box:hover
-{
-    transform: translateY(-120px);
-    transition: transform 0.3s ease;
-}
-
-img#activiteit-foto, img#Bezienswaardigheden-foto, img#eten-foto
-{
-    max-width: 100%;
-    background-color: rgba(0, 0, 0, 0.329);
-    z-index: 1;
-
-    
-}
-
-p#text1-foto, p#text2-foto, p#text3-foto
-{
-    position: absolute;
-    color: white;
-    font-size: 50px;
-    padding-top: 20px;
-    
-}
-
-p#text1-foto
-{
-    padding-left: 140px;
-}
-
-p#text2-foto
-{
-    padding-left: 30px;
-    
-}
-p#text3-foto
-{
-    padding-left: 180px;
-    
-}
-
-
-
-
-/*-------------------Activiteit (Ersin)-----------------------------*/
-img#foto-activiteit
-{
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-    max-width: 800px;
-}
-
-/*-------------------Bezienswaardigheden (CAN)-----------------------------*/
-
-img#foto-bezienswaardigheden
-{
-    height: 100%;
-    width: 100%;
-    max-height: 100%;
-}
-#column-bezienswaardigheden
-{
-    width: 50%; 
-    float: left;
-    background-color: rgba(115, 113, 113, 0.685); 
-    height: 100%;
-    max-height: 100%;
-}
-
-/*-------------------Eten  (Ersin)-----------------------------*/
-
-
-div#column1
-{
-    width: 50%; 
-    float: left;
-    background-color: pink; 
-    height: 100%;
-}
-
-div#column-foto
-{
-    width: 50%;
-    float: left;
-
-}
-
-p#text
-{
-    padding-top: 5%;
-    line-height: 210%;
-    padding-left: 10%;
-    padding-right: 10%;
-   animation-name: inherit;
-   animation-duration: 0.5s;
-}
-
-button
-{
-    margin-top: 50px;
-    width: 150px;
-    height: 30px;
+/*-------------------Contact-----------------------------*/
+form {
+    margin: 20px auto;
+    margin-top: 70px;
+    width: 500px;
+    padding: 100px;
+    height: 650px;
     border-radius: 30px;
-    font-weight: bold;
-    background-color: white;
-    font-size: 15px;
-    transition-duration: 0.5s;
-    
-}
+    margin-bottom: 100px;
+  }
+  form h1.from{
+    color: black;
+  }
+  
+label {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #555;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    cursor: pointer;
 
-button:hover
-{
-    background-color: black ;
-    color: pink;
-    transition-duration: 0.5s;
-    width: 170px;
 }
-button:hover::after
-{
-    transition-duration: 0.5s;
-}
-
-img#foto1, img#foto2
-{
-    width: 50%;
-    max-width: 500px;
-    height: auto;
-    float: left;  
-}
-
-
-img#instagram, img#locatie
-{
+form hr{
+    margin-top: 20px;
     width: 100%;
-    max-width: 30px;
-    margin-left: 30px;
-    margin-top: 50px;
+}
+div.ondertekst{
+    padding-top: 80px;
+    padding-bottom: 10px;
+}
+div.ondertekst strong, p{
+    color: #555;
+}
+  
+input[type="text"], input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
 }
 
 
+input:hover{
+    background-color: #292929;
+    color: white;
 
-/*-------------------Bereikbaarheid (CAN)-----------------------------*/
-
-
-
-
-/*-------------------Contact  (CAN)-----------------------------
-
-
-
-
-                    UNDER CONSTRUCTION
- De code staat momenteel in Contact.html we gaan er zo snel mogelijk een oplossing voor vinden*/
-
-
-
-
-
+}
+textarea:hover{
+    background-color: #292929;
+    color: white;
+}
+  
+input[type="submit"] {  /*Versturen*/
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 30%;
+    transition-duration: 0.5s;
+}
+input[type="submit"]:hover{
+    color: #333;
+    background-color: #fff;
+    border: #292929 solid;
+    transition-duration: 0.5s;
+    width: 34%;
+}
+input[type="submit"]:hover::after{
+    transition-duration: 0.5s;
+}
 /*------------------Responsive Website-------------------------*/
 
 @media  only screen and (max-width:1220px)
